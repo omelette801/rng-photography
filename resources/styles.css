@@ -356,5 +356,6 @@ footer div {
     #footer-right {
         position: relative;
         float: none;
+        padding-bottom: 2rem;
     }
 }
