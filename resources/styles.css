@@ -214,6 +214,7 @@ div.services:hover {
 
     #services {
         flex-shrink: 1;
+        margin: 0.2rem;
     }
 }
 
@@ -316,6 +317,10 @@ footer div {
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
 
+    header {
+        height: 6.2rem;
+    }
+
     html {
         min-width: 320px;
     }
@@ -343,5 +348,9 @@ footer div {
         margin: 5.5rem 0 auto; 
     }
 
+    /* footer mobile */
 
+    footer {
+        display: flex;
+    }
 }
