@@ -214,7 +214,6 @@ div.services:hover {
 
     #services {
         flex-shrink: 1;
-        margin: 0.2rem;
     }
 }
 
@@ -351,6 +350,11 @@ footer div {
     /* footer mobile */
 
     footer {
-        display: flex;
+        display: inline-block;
+    }
+
+    #footer-right {
+        position: relative;
+        float: none;
     }
 }
