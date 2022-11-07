@@ -1,0 +1,301 @@
+/* * {
+    border: 1px solid red;
+} */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+    background-color: #F2E9E4;
+    color: #22223b;
+    padding: 3rem;
+}
+
+header {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    height: 5.5rem;
+    top: 0;
+    right: 0;
+    box-shadow: #22223b;
+    z-index: 100;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+header h1 {
+    float: left;
+    color: #22223b;
+    padding-left: 2.5rem;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    float: right;
+    padding-right: 2.5rem;
+}
+
+nav li {
+    display: inline-flex;
+    
+}
+
+nav a {
+    float: left;
+    color: #22223b;
+    text-align: center;
+    padding: 0.6875rem 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+nav a:hover {
+    background-color: #F2E9E4;
+    color: #22223b;
+    border-radius: 4px;
+}
+
+nav a:active {
+    background-color: white;
+    color: #22223b;
+}
+
+/* MAIN SECTION */
+
+main {
+    margin: 5.5rem 1rem auto;
+}
+
+main .container {
+    background-image: linear-gradient(to right, #F2E9E4, #9A8C98);
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    height: fit-content;
+    background-color: #F2E9E4;
+}
+
+/* Description - full size */
+
+#desc-content {
+    margin: auto;
+    height: auto;
+    padding: 3rem;
+    background-color: white;
+    width: 50%;
+}
+
+.box.img {
+    background-size: cover;
+    background-image: url(./images/about_lighthouse.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box {
+    width: 50%;
+}
+
+#description {
+    display: flex;
+}
+
+#description p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Description - mobile */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    header {
+        z-index: 100;
+    }
+
+    .box.img {
+        display: none;
+    }
+
+    #desc-content {
+        width: 100%;
+        opacity: 80%;
+        margin: 0;
+    }
+
+    #description {
+        background-image: url('./images/about_lighthouse.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* Services - full size */
+
+#services h1 {
+    padding: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+#serv-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem;
+    flex-flow: wrap row;
+    align-content: space-around;
+}
+
+.services {
+    padding: 5rem;
+    border-radius: 5px;
+    min-width: 200px;
+    max-width: 100px;
+    margin: 1rem;
+}
+
+div.services:hover {
+    background-color: white;
+    opacity: 80%;
+    transition: all ease-in-out 0.3s;
+}
+
+.services h2 {
+    color: white;
+    text-shadow: 2px 2px 3px #22223b;
+    text-align: center;
+}
+
+#lands {
+    background-image: url('./images/serv_landscape.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#events {
+    background-image: url('./images/serv_events.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#products {
+    background-image: url('./images/serv_products.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Services - mobile */
+
+@media only screen and (max-width: 768px) {
+    #services h1 {
+        text-align: center;
+    }
+}
+
+/* Team - full size */
+
+#team h1 {
+    padding: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+#team-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap row;
+    padding-bottom: 2rem;
+}
+
+.team-members {
+    display: flex;
+    padding: 1rem;
+}
+
+#team-lily {
+    background-image: url('./images/team-lily.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#team-luke {
+    background-image: url('./images/team-luke.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#team-liza {
+    background-image: url('./images/team-liza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+.member-img {
+    width: 10rem;
+    height: 15rem;
+}
+
+.member-details {
+    font-family: 'Jost', sans-serif;
+    padding: 3rem;
+    text-align: left;
+    background-color: #4A4E69;
+    color: #F2E9E4;
+    max-width: 120px;
+}
+
+/* Team - mobile */
+
+@media only screen and (max-width: 768px) {
+    #team h1 {
+        text-align: center;
+    }
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+footer div {
+    height: auto;
+    margin: auto 1rem;
+}
+
+#footer-left {
+    float: left;
+}
+
+#footer-right {
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
