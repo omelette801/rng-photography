@@ -36,6 +36,10 @@ header h1 {
     z-index: 100;
 }
 
+#logo-small {
+    visibility: hidden;
+}
+
 nav {
     display: flex;
     float: right;
@@ -139,6 +143,10 @@ main h1 {
         background-size: cover;
         background-position: center;
     }
+
+    #description p {
+        font-size: 1rem;
+    }
 }
 
 /* Services - full size */
@@ -201,9 +209,13 @@ div.services:hover {
 
 /* Services - mobile */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
     #services h1 {
         text-align: center;
+    }
+
+    #services {
+        flex-shrink: 1;
     }
 }
 
@@ -264,7 +276,7 @@ div.services:hover {
 
 /* Team - mobile */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
     #team h1 {
         text-align: center;
     }
@@ -298,4 +310,45 @@ footer div {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+
+/* Main Mobile */
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+
+    html {
+        min-width: 320px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    #logo {
+        visibility: hidden;
+    }
+
+    #logo-small {
+        display: block;
+        color:#22223b;
+        font-size: 1em;
+    }
+
+    main {
+        margin: 5.5rem 0 auto; 
+    }
+
+
 }
