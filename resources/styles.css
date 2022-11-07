@@ -173,6 +173,7 @@ main h1 {
     max-width: 100px;
     margin: 1rem;
     min-height: 6rem;
+    flex-shrink: 1;
 }
 
 div.services:hover {
@@ -238,6 +239,7 @@ div.services:hover {
 .team-members {
     display: flex;
     padding: 1rem;
+    flex-shrink: 1;
 }
 
 #team-lily {
