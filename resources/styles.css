@@ -36,10 +36,6 @@ header h1 {
     z-index: 100;
 }
 
-#logo-small {
-    visibility: hidden;
-}
-
 nav {
     display: flex;
     float: right;
@@ -341,12 +337,6 @@ footer div {
 
     #logo {
         visibility: hidden;
-    }
-
-    #logo-small {
-        display: block;
-        color:#22223b;
-        font-size: 1em;
     }
 
     main {
