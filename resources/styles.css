@@ -99,7 +99,7 @@ main h1 {
 
 .box.img {
     background-size: cover;
-    background-image: url(./images/about_lighthouse.jpg);
+    background-image: url('./images/about_lighthouse.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
