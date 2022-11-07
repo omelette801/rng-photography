@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid red;
-} */
+}
 
 html {
     font-size: 16px;
@@ -163,13 +163,12 @@ main h1 {
 }
 
 .services {
-    padding: 5rem;
+    padding: 5rem 1rem;
     border-radius: 5px;
-    min-width: 100px;
-    max-width: 200px;
+    min-width: 250px;
     margin: 1rem;
     min-height: 6rem;
-    flex-shrink: 1;
+    flex: 1 1;
 }
 
 div.services:hover {
